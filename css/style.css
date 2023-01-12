@@ -102,6 +102,8 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: space-evenly;
+    row-gap: 5px;
 }
 .row--action--list--item{
     width: 220px ;
@@ -109,6 +111,7 @@ main{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }
 .row--action--timer{
     display: flex;
@@ -117,8 +120,23 @@ main{
     align-items: center;
     justify-content: space-around;
 }
-.timer{
+.icon--play{
+    font-size: 1rem;
+}
+.icon--play,
+.icon--play--volume{
     color: white;
+}
+.fa-circle-play{
+    font-size: 2rem;
+}
+.timer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 auto;
 }
 .row--volume{
     height: 100%;
@@ -134,13 +152,6 @@ main{
 .icon--play--volume,
 .icon--play--song{
     font-size: 1rem;
-}
-.icon--play,
-.icon--play--volume{
-    color: white;
-}
-.fa-circle-play{
-    font-size: 2rem;
 }
 .music--line{
     width: 100%;
