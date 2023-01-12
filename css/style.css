@@ -19,6 +19,5 @@ header{
 main{
     width: calc(100% - 220px);
     height: 100%;
-    overflow: scroll;
     background-color: blue;
 }
