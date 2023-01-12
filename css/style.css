@@ -6,6 +6,12 @@
 .row{
     display: flex;
 }
+.col__80{
+    flex-basis: 80%;
+}
+.col__70{
+    flex-basis: calc(70% - 12px);
+}
 .col__60{
     flex-basis: 60%;
 }
@@ -49,6 +55,7 @@ main{
 
 
 .row--player{
+    height: 100%;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -56,13 +63,13 @@ main{
     width: 220px;
 }
 .row--song--play{
-    padding: 15px 10px;
+    padding: 20px 10px;
     flex-direction: row;
     justify-content: space-between;
 }
 .player__song--play{
     display: flex;
-    column-gap: 12px;
+    column-gap: 11px;
     flex-direction: row;
     align-items: center;
 }
@@ -71,14 +78,77 @@ main{
 }
 .song--name,
 .song--artist{
-    font-size: 0.8rem;
+    text-transform: capitalize;
 }
 .song--name{
+    font-weight: 700;
+    font-size: 0.8rem;
     color: white;
 }
 .song--artist{
+    font-size: 0.7rem;
     color: grey;
 }
-.icon--player--song{
+.icon--play--song{
     color: grey;
 }
+.player--icon--play{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.row--action{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.row--action--list--item{
+    width: 220px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.row--action--timer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.timer{
+    color: white;
+}
+.row--volume{
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px 10px;
+}
+.position--icon{
+    display: flex;
+    justify-content: space-around;
+}
+.icon--play--volume,
+.icon--play--song{
+    font-size: 1rem;
+}
+.icon--play,
+.icon--play--volume{
+    color: white;
+}
+.fa-circle-play{
+    font-size: 2rem;
+}
+.music--line{
+    width: 100%;
+    border-bottom: 2px solid grey;
+}
+.music--volume{
+    width: 30%;
+    border-top: 3px solid white;
+    margin-top: -2px;
+}
+
