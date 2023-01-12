@@ -1,0 +1,22 @@
+
+
+@media only screen and (max-width: 639px){
+
+/* MEDIAQUERY DESKTOP-FIRST SIDE-BAR -- PLAYER SECTION */
+
+    .col__fix{
+        flex-basis: 30%;
+    }
+    .song--artist{
+        font-size: 0.6rem;
+    }
+    .player--icon--play{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .icon--play--volume{
+        font-size: 0.7rem;
+    }
+
+}
