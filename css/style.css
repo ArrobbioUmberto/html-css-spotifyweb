@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: 'Noto Sans Tangsa', sans-serif;
+}
 .row{
     display: flex;
 }
@@ -86,6 +89,7 @@ main{
     color: white;
 }
 .song--artist{
+    font-weight: 400;
     font-size: 0.7rem;
     color: grey;
 }
