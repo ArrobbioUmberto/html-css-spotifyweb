@@ -18,6 +18,9 @@
 .col__20{
     flex-basis: 20%;
 }
+.col__10{
+    flex-basis: 10%;
+}
 
 /* MACRO LAYOUT SECTION  */
 
@@ -46,6 +49,36 @@ main{
 
 
 .row--player{
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+}
+.col__fix{
+    width: 220px;
+}
+.row--song--play{
+    padding: 15px 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.player__song--play{
+    display: flex;
+    column-gap: 12px;
+    flex-direction: row;
+    align-items: center;
+}
+.player--img{
+    width: 50px;
+}
+.song--name,
+.song--artist{
+    font-size: 0.8rem;
+}
+.song--name{
+    color: white;
+}
+.song--artist{
+    color: grey;
+}
+.icon--player--song{
+    color: grey;
 }
