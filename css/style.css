@@ -13,7 +13,8 @@ a{
 }
 :root{
     --darkgrey: #282828;
-    --opacgrey:#141923;
+    --bluegrey:#141923;
+    --grey: #7b7b7b;
 
 
 }
@@ -59,8 +60,8 @@ html{
 header{
     width: 220px;
     height: 100%;
-    background-color: green;
-    overflow: auto;
+    background-color: black;
+    overflow: hidden;
 }
 main{
     width: calc(100% - 220px);
@@ -76,6 +77,55 @@ main{
 
 .row--header{
     flex-direction: column;
+    padding: 10px 10px 0;
+    height: 100%;
+}
+.logo--header{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: 150px;
+    margin: 20px 0;
+}
+.logo--small{
+    width: 100%;
+    display: none;
+    margin-bottom: 20px;
+}
+.action--header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    row-gap: 20px;
+}
+.action--header a{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    margin: 10px 0;
+}
+.action--icon{
+    width: 25px;
+}
+.action--text{
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.title--playlist{
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.subtitle--playlist{
+    color: var(--grey);
+    text-transform: capitalize;
+}
+.install--header{
+    margin-top: auto;
 }
 
 /* ASIDE CONTAINER SHORT -- PLAYER  */
@@ -115,10 +165,10 @@ main{
 .song--artist{
     font-weight: 400;
     font-size: 0.7rem;
-    color: grey;
+    color: var(--grey);
 }
 .icon--play--song{
-    color: grey;
+    color: var(--grey);
 }
 .player--icon--play{
     display: flex;
