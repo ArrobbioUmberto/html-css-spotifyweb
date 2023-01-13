@@ -75,7 +75,7 @@ main{
 /* HEADER SECTION - NAV SIDE BAR */
 
 
-.row--header{
+.row__header{
     flex-direction: column;
     padding: 10px 10px 0;
     height: 100%;
@@ -113,7 +113,6 @@ main{
     color: var(--grey);
     font-weight: 400;
     font-size: 1rem;
-    text-transform: capitalize;
 }
 .playlist{
     display: flex;
@@ -135,7 +134,6 @@ main{
 .fa-square-plus{
     color: var(--grey);
     font-size: 2.5rem;
-    font-weight: 700;
 }
 .subtitle__playlist{
     color: var(--grey);
@@ -145,11 +143,46 @@ main{
 .playlist__list--item{
     color: var(--grey);
     font-size: 0.8rem;
-    font-weight: 700;
     text-transform: capitalize;
 }
 .install--header{
     margin-top: auto;
+}
+.install--app{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--grey);
+}
+.fa-circle-down,
+.install--text{
+    color: var(--grey);
+    font-size: 1rem;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+}
+.fa-user{
+    background-color: var(--grey);
+    color: white;
+    font-size: 2rem;
+    border-radius: 12px;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+.action--text::first-letter,
+.install--text::first-letter{
+    text-transform: uppercase;
+}
+.user--name{
+    font-size: 1rem;
+    color: white;
+    text-transform: capitalize;
 }
 
 /* ASIDE CONTAINER SHORT -- PLAYER  */
