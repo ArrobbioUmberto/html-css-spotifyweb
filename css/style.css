@@ -115,13 +115,37 @@ main{
     font-size: 1rem;
     text-transform: capitalize;
 }
-.title--playlist{
+.playlist{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.title__playlist{
     color: white;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1rem;
 }
-.subtitle--playlist{
+.create__playlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+.fa-square-plus{
     color: var(--grey);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.subtitle__playlist{
+    color: var(--grey);
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.playlist__list--item{
+    color: var(--grey);
+    font-size: 0.8rem;
+    font-weight: 700;
     text-transform: capitalize;
 }
 .install--header{
