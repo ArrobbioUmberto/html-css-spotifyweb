@@ -19,5 +19,28 @@
     .song--name{
         font-size: 0.8rem;
     }
+
+    /* MEDIAQUERY DESKTOP-FIRST HEADER -- NAV BAR */
+
+    .logo,
+    .action--text,
+    .col--playlist,
+    .install--text,
+    .user--name{
+        display: none;
+    }
+    .install--app{
+        border: 0;
+    }
+    .fa-circle-down{
+        margin: 0 auto;
+    }
+    .logo--small{
+        display: block;
+    }
+    .action--header a{
+        justify-content: center;
+    }
+
     
 }
