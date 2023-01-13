@@ -233,7 +233,7 @@ main{
 }
 .yellow--line{
     width: 40px;
-    margin: 0 auto;
+    margin: 3px auto;
     border: 2px solid yellow;
 }
 
