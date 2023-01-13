@@ -8,6 +8,9 @@ li,
 menu{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 :root{
     --darkgrey: #282828;
     --opacgrey:#141923;
@@ -57,12 +60,22 @@ header{
     width: 220px;
     height: 100%;
     background-color: green;
+    overflow: auto;
 }
 main{
     width: calc(100% - 220px);
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
     background-color: blue;
+}
+
+
+
+/* HEADER SECTION - NAV SIDE BAR */
+
+
+.row--header{
+    flex-direction: column;
 }
 
 /* ASIDE CONTAINER SHORT -- PLAYER  */
@@ -120,6 +133,7 @@ main{
     flex-wrap: nowrap;
     justify-content: space-evenly;
     row-gap: 5px;
+    max-width: 700px;
 }
 .row--action--list--item{
     width: 220px ;
