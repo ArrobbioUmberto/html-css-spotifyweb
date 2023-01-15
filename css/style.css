@@ -264,14 +264,14 @@ main{
 }
 .title--recently{
     color: white;
-    text-align: center;
+    text-align:center;
     font-size: 1rem;
     text-transform: capitalize;
 }
 .subtitle--recently{
     color: var(--grey-text);
     text-transform: capitalize;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 
