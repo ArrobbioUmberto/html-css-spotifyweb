@@ -10,6 +10,15 @@
 
 
 
+/* MEDIAQUERY DESKTOP-FIRST MAIN SECTION */
+
+
+.album{
+    flex-basis: calc(100%/ 4 - 20px);
+}
+
+
+
 
      
 }
