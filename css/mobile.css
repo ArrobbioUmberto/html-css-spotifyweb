@@ -19,4 +19,11 @@
         font-size: 0.7rem;
     }
 
+    /* MEDIAQUERY DESKTOP-FIRST MAIN SECTION */
+
+
+    .album{
+        flex-basis: calc(100%/ 2 - 20px);
+    }
+
 }
