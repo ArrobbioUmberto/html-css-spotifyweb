@@ -216,23 +216,31 @@ main{
     flex-direction: column;
     width: 100%;
     height: calc(100% - 85px);
+    gap: 30px;
 }
+
+
+/* SECTION OF THE CATEGORY  */
+
+
+
 .col--category{
     display: flex;
     justify-content: center;
-    margin: 20px 40px;
+    margin: 20px 10px;
 }
 .category{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 .category__list--item{
     color: var(--grey-text);
+    font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
 
 }
 .yellow--line{
@@ -240,38 +248,87 @@ main{
     margin: 3px auto;
     border: 2px solid yellow;
 }
-.col--recently{
+
+
+/* SECTION  RECENTLY  */
+
+
+
+.col--recently,
+.col--john,
+.col--popular{
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    gap: 20px;
-    margin: 0 20px;
+    gap: 30px;
+    margin: 0px 20px;
 }
-.row__recently{
+.row__recently,
+.row--john,
+.row--popular{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
 }
 .album{
     display: flex;
     flex-direction:column;
     align-items: center;
-    flex-basis: calc(100%/ 6 - 20px);
+    flex-basis: calc(100%/ 6 - 15px);
     gap: 10px;
 }
 .album--picture{
     width: 100%;
 }
-.title--recently{
+.title__recently{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+.title--album--recently{
     color: white;
     text-align:center;
     font-size: 1rem;
     text-transform: capitalize;
 }
-.subtitle--recently{
+.subtitle--album--recently{
     color: var(--grey-text);
     text-transform: capitalize;
     font-size: 0.7rem;
+}
+
+/* SECTION CREATED FOR JOHN  */
+
+.subtitle--album--john,
+.subtitle--popular{
+    color: var(--grey-text);
+    font-size: 0.7rem;
+}
+.subtitle--popular::first-letter,
+.subtitle--album--john::first-letter,
+.title--popular::first-letter{
+    text-transform: uppercase;
+}
+.created__john,
+.popular--artist{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* SECTION POPULAR */
+.col--popular{
+    padding: 20px 0;
+}
+.circle{
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1;
+}
+.title--popular{
+    color: white;
+    font-size: 1.2rem;
 }
 
 
