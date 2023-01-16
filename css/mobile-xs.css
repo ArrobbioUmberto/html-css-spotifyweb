@@ -37,6 +37,7 @@
     }
     .logo--small{
         display: block;
+        margin-bottom: 0;
     }
     .action--header a{
         justify-content: center;

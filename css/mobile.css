@@ -10,11 +10,11 @@
     .song--artist{
         font-size: 0.6rem;
     }
-    .player--icon--play{
+    /* .player--icon--play{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-    }
+    } */
     .icon--play--volume{
         font-size: 0.7rem;
     }
