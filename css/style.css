@@ -10,12 +10,14 @@ menu{
 }
 a{
     text-decoration: none;
+    color: currentColor;
 }
 :root{
     --darkgrey: #282828;
     --bluegrey:#141923;
     --grey: #7b7b7b;
     --grey-text: #5e6166;
+    --yellow: #adff2f;
 
 
 }
@@ -70,6 +72,9 @@ main{
     overflow: auto;
     background-color: var(--bluegrey);
     position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
@@ -79,12 +84,12 @@ main{
 
 .row__header{
     flex-direction: column;
-    padding: 10px 10px 0;
     height: 100%;
 }
 .logo--header{
     display: flex;
     flex-direction: row;
+    padding: 0 10px;
 }
 .logo{
     width: 150px;
@@ -97,16 +102,25 @@ main{
 }
 .action--header{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    row-gap: 20px;
+    padding: 0 10px ;
 }
 .action--header a{
     display: flex;
     flex-direction: row;
     column-gap: 10px;
     align-items: center;
-    margin: 10px 0;
+    margin: 5px 0;
+}
+.yellow--line--header{
+    height: 100%;
+    background-color: var(--yellow);
+    width: 2px;
+    margin: 0 -10px;
+}
+.yellow--line--margin{
+    margin: 0 10px;
 }
 .action--icon{
     width: 25px;
@@ -120,6 +134,7 @@ main{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    padding: 0 10px;
 }
 .title__playlist{
     color: white;
@@ -149,6 +164,7 @@ main{
 }
 .install--header{
     margin-top: auto;
+    padding: 0 10px;
 }
 .install--app{
     display: flex;
@@ -188,13 +204,27 @@ main{
 }
 
 
+/* HOVER HEADER SECTION  */
+.action--header--link:hover .home,
+.action--header--link:hover .search,
+.action--header--link:hover .library,
+.playlist__list--item:hover,
+.create__playlist:hover .fa-square-plus,
+.create__playlist:hover .subtitle__playlist,
+.install--app:hover .install--text,
+.install--app:hover .fa-circle-down{
+    color: white;
+}
+
+
+
 /* MAIN SECTION  */
 
 .upgrade{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    flex-grow: 1;
     height: 85px;
     background-color: black;
     position: sticky;
@@ -211,10 +241,13 @@ main{
     margin: 0 5px;
     text-transform: uppercase;
 }
+.button:hover{
+    font-size: 1.1rem;
+}
 .main--content{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex-grow: 1;
     height: calc(100% - 85px);
     gap: 30px;
 }
@@ -246,13 +279,17 @@ main{
 .yellow--line{
     width: 40px;
     margin: 3px auto;
-    border: 2px solid yellow;
+    border: 2px solid var(--yellow);
+}
+
+/* HOVER SECTION CATEGORY  */
+
+.category__list--item:hover{
+    color: white;
 }
 
 
 /* SECTION  RECENTLY  */
-
-
 
 .col--recently,
 .col--john,
@@ -279,6 +316,7 @@ main{
 }
 .album--picture{
     width: 100%;
+    position: relative;
 }
 .title__recently{
     color: white;
@@ -295,6 +333,13 @@ main{
     color: var(--grey-text);
     text-transform: capitalize;
     font-size: 0.7rem;
+}
+
+
+/* HOVER SECTION RECENTLY  */
+
+.album--image:hover img{
+    filter: brightness(0.5);
 }
 
 /* SECTION CREATED FOR JOHN  */
@@ -348,15 +393,19 @@ main{
     margin: 20px 10px;
     flex-direction: row;
     justify-content: space-between;
+    gap: 20px;
 }
 .player__song--play{
     display: flex;
-    column-gap: 11px;
+    column-gap: 4px;
     flex-direction: row;
     align-items: center;
 }
 .player--img{
     width: 50px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
 }
 .song--name,
 .song--artist{
@@ -378,6 +427,7 @@ main{
 .player--icon--play{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -386,8 +436,7 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
-    row-gap: 5px;
+    justify-content: space-around;
     max-width: 700px;
 }
 .row--action--list--item{
@@ -423,6 +472,11 @@ main{
     font-weight: 700;
     margin: 0 auto;
 }
+.volume{
+    display: flex;
+    padding: 5px 0;
+}
+
 .row--volume{
     height: 100%;
     flex-direction: row;
@@ -445,18 +499,57 @@ main{
     align-items: center;
     gap: 10px;
 }
-.volume--set{
-    width: 100%;
-}
 .music--line{
-    width: 100%;
-    border-bottom: 3px solid grey;
-    border-radius: 10px;
+    display:flex;
+    flex-grow: 1;
+    flex-direction: row;
+    background-color: var(--grey);
+    border-radius: 999px;
+    position: relative;
 }
 .music--volume{
     width: 30%;
-    border-top: 3px solid white;
-    margin-top: -3px;
-    border-radius: 10px;
+    background-color: white;
+    height: 4px;
+    border-radius: 999px;
 }
+
+
+
+/* GRAPHIC HOVER PLAYER SECTION */
+
+.song--artist:hover{
+    text-decoration: underline;
+    color: white;
+}
+.fa-heart:hover,
+.fa-folder:hover{
+    color: white;
+}
+.music--line:hover .music--volume{
+    background-color: green;
+}
+.time--ball{
+    display: none;
+    height: 9px;
+    width: 9px;
+    position: absolute;
+    background-color: white;
+    border-radius: 999px;
+    aspect-ratio: 1;
+    left: 30%;
+    margin: -2px;
+}
+.music--line:hover .time--ball{
+    display: block;
+}
+.fa-circle-play:hover{
+    font-size: 2.1rem;
+}
+
+
+
+
+
+
 
