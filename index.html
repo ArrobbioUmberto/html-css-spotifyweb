@@ -22,26 +22,19 @@
                     <a href=""><img class="logo--small" src="./img/logo-small.svg" alt="logo--small"></a>
                 </div>
                 <div class="action--header">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img class="action--icon" src="./img/home.svg" alt="home">
-                                <h2 class="action--text">home</h2>
+                            <a href="#" class="action--header--link">
+                                <div class="yellow--line--header"></div>
+                                <img class="action--icon yellow--line--margin" src="./img/home.svg" alt="home">
+                                <h2 class="action--text home">home</h2>
                             </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            <a href="#" class="action--header--link">
                                 <img class="action--icon" src="./img/search.svg" alt="search">
-                                <h2 class="action--text">cerca</h2>
+                                <h2 class="action--text search">cerca</h2>
                             </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            <a href="#" class="action--header--link">
                                 <img class="action--icon" src="./img/libreria.svg" alt="library">
-                                <h2 class="action--text">la tua libreria</h2>
+                                <h2 class="action--text library">la tua libreria</h2>
                             </a>
-                        </li>
-                    </ul>
                 </div>
                 <div class="col--playlist">
                     <ul class="playlist">
@@ -82,11 +75,14 @@
                     <h1 class="title__recently"> recently played</h1>
                     <div class="row row__recently">
                         <div class="album">
-                            <a href="#">
-                                <img class="album--picture pino" src="./img/metal_lifting.jpg" alt="metal"> 
+                            <a href="#" class="album--image">
+                                <!-- <div class="pop--up">
+                                    <i class="fa-regular fa-circle-play icon--play"></i> 
+                                </div> -->
+                                <img class="album--picture " src="./img/metal_lifting.jpg" alt="metal"> 
                             </a>
-                            <a href="#" class="pino"><h2 class="title--album--recently">heavy metal</h2></a>
-                            <a href="#" class="pino"><h3 class="subtitle--album--recently">subtitle</h3></a>
+                            <a href="#"><h2 class="title--album--recently">heavy metal</h2></a>
+                            <a href="#"><h3 class="subtitle--album--recently">subtitle</h3></a>
                         </div>
                         <a href="#" class="album">
                             <figure>
@@ -177,8 +173,8 @@
                         </div> 
                     </div>
                     <div class="col__30 player--icon--play">
-                        <i class="fa-regular fa-heart icon--play--song"></i>
-                        <i class="fa-regular fa-folder icon--play--song"></i>
+                        <a href="#"><i class="fa-regular fa-heart icon--play--song"></i></a>
+                        <a href="#"><i class="fa-regular fa-folder icon--play--song"></i></a>
                     </div>
                 </div>
             </div>
@@ -187,7 +183,7 @@
                     <ul class="row--action--list--item">
                         <li><a href="#"><i class="fa-solid fa-shuffle icon--play"></i></a></li>
                         <li><i class="fa-solid fa-backward-step icon--play"></i></a> </li>
-                        <li><a href="#"><i class="fa-regular fa-circle-play icon--play"></i></a> </li>
+                        <li><a href="#"><i class="fa-regular fa-circle-play icon--play"></i></a></li>
                         <li><i class="fa-solid fa-forward-step icon--play"></i></a> </li>
                         <li><a href="#"><i class="fa-solid fa-rotate-right icon--play"></i></a> </li>
                     </ul>
@@ -195,10 +191,11 @@
                         <div class="col__10">
                             <time class="timer">0:25</time>
                         </div>
-                        <div class="col__80">
-                            <div class="music--line">
+                        <div class="col__80 volume">
+                            <a href="#" class="music--line">
                                 <div class="music--volume"></div>
-                            </div>
+                                <div class="time--ball"></div>
+                            </a>
                         </div>
                         <div class="col__10">
                             <time class="timer">4:35</time>
@@ -215,9 +212,10 @@
                     </div>
                     <div class="col__60 position--volume">
                         <i class="fa-solid fa-volume-high icon--play--volume"></i>
-                        <div class="music--line">
+                        <a href="#" class="music--line">
                             <div class="music--volume"></div>
-                        </div> 
+                            <div class="time--ball"></div>
+                        </a> 
                     </div>
                 </div>
             </div>
