@@ -4,6 +4,12 @@
     header{
         width: 50px;
     }
+    .yellow--line--header{
+        display: none;
+    }
+    .yellow--line--margin{
+        margin: 0;
+    }
     main{
         width: calc(100% - 50px);
     }
