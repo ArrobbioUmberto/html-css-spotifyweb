@@ -85,6 +85,7 @@ main{
 .row__header{
     flex-direction: column;
     height: 100%;
+    gap: 10px;
 }
 .logo--header{
     display: flex;
@@ -93,7 +94,7 @@ main{
 }
 .logo{
     width: 150px;
-    margin: 20px 0;
+    margin: 20px 0 0;
 }
 .logo--small{
     width: 100%;
@@ -229,6 +230,7 @@ main{
     background-color: black;
     position: sticky;
     top: 0;
+    z-index: 1;
 
 }
 .button{
@@ -313,10 +315,10 @@ main{
     align-items: center;
     flex-basis: calc(100%/ 6 - 15px);
     gap: 10px;
+    position: relative;
 }
 .album--picture{
     width: 100%;
-    position: relative;
 }
 .title__recently{
     color: white;
@@ -334,12 +336,31 @@ main{
     text-transform: capitalize;
     font-size: 0.7rem;
 }
+.fa-regular.pop--up--image,
+.fa-regular.pop--up--title,
+.fa-regular.pop--up--subtitle
+{
+  display: none;
+}
+
 
 
 /* HOVER SECTION RECENTLY  */
-
-.album--image:hover img{
+.album:hover img{
     filter: brightness(0.5);
+}
+.album:hover i
+{
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+.album:hover .album{
+    position: relative;
 }
 
 /* SECTION CREATED FOR JOHN  */
