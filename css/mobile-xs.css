@@ -4,14 +4,15 @@
     header{
         width: 50px;
     }
-    .yellow--line--header{
-        display: none;
-    }
-    .yellow--line--margin{
-        margin: 0;
-    }
     main{
         width: calc(100% - 50px);
+    }
+    .action--header > .action--header--link:hover::before,
+    .action--header--link.active::before{
+    display: none;
+    }
+    .action--icon{
+        margin-left: 0;
     }
 
     /* MEDIAQUERY DESKTOP-FIRST SIDE-BAR -- PLAYER SECTION */
